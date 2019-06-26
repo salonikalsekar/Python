@@ -63,3 +63,23 @@ print(id(a))
 
 ###################################################
 
+# to refer a global variable we use the keyword-global a
+# and to change the global variable we use globals()['a']
+
+# passing list to a function
+
+def count(lst):
+    even = 0
+    odd = 0
+    for i in lst:
+        if i%2==0:
+            even+=1
+        else:
+            odd += 1
+    return even, odd
+
+lst = [5,6,7,33,4,56,76,88,77,97]
+
+even, odd= count(lst)
+print("Even : {} and Odd {}".format(even,odd))
+
