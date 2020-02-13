@@ -1,7 +1,10 @@
+#open the file
 f = open('arrays.py', 'r')
 
+#to read the file content
 # print(f.read())
 
+#print the contents
 print(f.readline(4), end="")
 print(f.readline())
 
